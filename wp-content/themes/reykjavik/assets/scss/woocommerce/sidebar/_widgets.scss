@@ -1,0 +1,47 @@
+/* FILE: woocommerce/sidebar/_widgets.scss */
+
+// Product lists.
+.product_list_widget {
+
+	li {
+
+		a {
+			font-weight: 700;
+		}
+
+		.widget & {
+			padding: ( $golden_major +rem ) 0;
+			overflow: hidden;
+
+			.fl-module & {
+				padding-top: 1em;
+				padding-bottom: 1em;
+			}
+
+		}
+
+	}
+
+	a {
+		display: block;
+		margin-bottom: $golden_minor +em;
+	}
+
+	img {
+		float: $right; // {{RTL}}
+		width: _pow( $golden, 2 ) +em;
+		margin-#{$left}: 1em;
+	}
+
+	.star-rating {
+		margin-bottom: $golden_major +em;
+	}
+
+}
+
+// Product counts.
+.widget.woocommerce .count {
+	float: $right; // {{RTL}}
+	margin-#{$left}: $golden_minor +em; // {{RTL}}
+	font-size: 1em;
+}

@@ -1,0 +1,68 @@
+/* FILE: blocks/_pullquote.scss */
+
+.wp-block-pullquote {
+	padding: ( _pow( $golden, 2 ) +em ) 6%;
+	text-align: inherit;
+	border-top-width: $golden_minor +em;
+	border-top-style: solid;
+	border-bottom-width: $golden_minor +em;
+	border-bottom-style: solid;
+	color: inherit;
+
+	blockquote {
+		padding: 0;
+	}
+
+	&.wp-block-pullquote p {
+		font-size: 1em;
+	}
+
+	&.alignleft,
+	&.alignright {
+		clear: none;
+		width: 50%;
+		max-width: none;
+		padding-left: 0;
+		padding-right: 0;
+		margin-left: 2em;
+		margin-right: 2em;
+		text-align: inherit;
+
+		@include media( map_get( $breakpoint, 's' ) ) {
+			width: percentage( $golden_minor );
+		}
+
+	}
+
+	&.alignleft {
+		padding-left: 0;
+		margin-left: 0;
+	}
+
+	&.alignright {
+		padding-right: 0;
+		margin-right: 0;
+	}
+
+	&.is-style-solid-color {
+
+		blockquote {
+			max-width: none;
+			text-align: inherit;
+
+			p {
+				font-size: 1em;
+			}
+
+		}
+
+	}
+
+}
+
+.wp-block-pullquote.alignleft,
+.wp-block-pullquote.alignright,
+[data-align="left"] .wp-block-pullquote,
+[data-align="right"] .wp-block-pullquote {
+	max-width: calc( var(--layout_width_entry_content) / 2 - 1em );
+}

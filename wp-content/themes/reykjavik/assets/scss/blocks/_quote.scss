@@ -1,0 +1,33 @@
+/* FILE: blocks/_quote.scss */
+
+.wp-block-quote {
+
+	// This is for backwards compatibility (with possible existing content).
+	&.is-large,
+	&.is-style-large {
+		padding: 0;
+
+		p {
+			font-size: 1.272em;
+			font-style: inherit;
+			line-height: inherit;
+		}
+
+		cite {
+			@extend %font_size_small;
+			text-align: inherit;
+		}
+
+	}
+
+}
+
+.wp-block-quote.has-text-align-center cite {
+	text-align: center;
+}
+
+.wp-block-quote__citation,
+.wp-block-quote cite,
+.wp-block-quote footer {
+	color: inherit;
+}

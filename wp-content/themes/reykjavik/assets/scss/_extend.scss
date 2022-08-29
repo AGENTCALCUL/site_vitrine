@@ -1,0 +1,22 @@
+/* FILE: _extend.scss */
+
+//
+// Global extenders.
+//
+// @package    Reykjavik
+// @copyright  WebMan Design, Oliver Juhas
+//
+// @since    1.0.0
+// @version  2.1.0
+//
+
+@import '_extend/accessibility';
+@import '_extend/blocks';
+@import '_extend/colors';
+@import '_extend/layout';
+@import '_extend/loop';
+@import '_extend/sidebars';
+@import '_extend/widgets';
+@import '_extend/typography';
+
+@import '_extend/others';

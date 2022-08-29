@@ -1,0 +1,14 @@
+/* FILE: woocommerce/sidebar/_widget-product-tags.scss */
+
+.widget_product_tag_cloud {
+
+	.tagcloud a {
+		text-decoration: none;
+
+		@include haf() {
+			text-decoration: underline;
+		}
+
+	}
+
+}

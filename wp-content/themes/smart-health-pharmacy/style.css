@@ -1,0 +1,165 @@
+/*
+Theme Name: Smart Health Pharmacy
+Template: bizberg
+Text Domain: smart-health-pharmacy
+Author: Bizberg Themes
+Author URI: https://bizbergthemes.com/ 
+Theme URI: https://bizbergthemes.com/downloads/smart-health-pharmacy/
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Description: Smart Health Pharmacy is a child theme of Bizberg WordPress Theme. Smart Health Pharmacy is a WordPress health theme for medical institutions, clinics, hospitals, doctors, surgeons, gynecologists, general therapist, and health-oriented organizations. It is a theme that’s designed specifically for the use by medical websites. You’ll find that Smart Health Pharmacy gives you ample freedom to talk about your health organization in a way that leaves no questions in patients’ minds. Smart Health Pharmacy is one of the most accessible themes which can easily accommodate all type of users with no coding skills to advanced developers. Smart Health Pharmacy includes excellent features for medical professionals and practices of all kinds, with one click demo data import, customizer based theme options, page builder-friendly design, page & post layout options. This Free Medical WordPress theme is fully responsive, cross-browser compatible, translation ready & SEO friendly. if you run into any problem while using our theme, you can refer to extensive documentation or contact our friendly support team. It fully supports Elementor, all the sections are made from Elementor.
+Tags: custom-logo,custom-menu,featured-images,threaded-comments,translation-ready,left-sidebar,right-sidebar,grid-layout,theme-options,blog,news,portfolio
+Version: 0.3
+Requires PHP: 5.6
+Tested up to: 6.0
+*/
+
+.navbar-default .navbar-nav > li > a {
+    letter-spacing: 0;
+}
+
+.features-area .section-title {
+    text-align: center;
+    max-width: 720px;
+    margin: 0px auto 70px;
+}
+
+.features-area{
+	padding: 80px 0;
+}
+
+.features-area .section-title .sub-title {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #0088cc;
+    font-size: 16px;
+    font-family: 'MontserratRegular';
+}
+
+.features-area .section-title h2 {
+    margin-bottom: 0;
+    font-size: 40px;
+    color: #000;
+    font-family: 'MontserratRegular';
+}
+
+.software-single-help-desk-box .icon i {
+    font-size: 30px;
+    color: #fff;
+    background: #0088cc;
+    width: 70px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.software-single-help-desk-box{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+}
+
+.software-single-help-desk-box h3 {
+    font-family: 'MontserratRegular';
+    color: #000;
+}
+
+.software-single-help-desk-box a.link-btn {
+    font-family: 'MontserratRegular';
+    display: flex;
+    align-items: center;
+}
+
+.software-single-help-desk-box a.link-btn i{
+	font-size: 10px;
+    padding-left: 9px;
+}
+
+.software-single-help-desk-box p {
+    text-align: center;
+}
+
+.bg-f9f9f9 {
+    background-color: #f9f9f9;
+}
+
+.software-funfacts-item {
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-left: 145px;
+    padding-bottom: 20px;
+}
+
+.software-funfacts-item .icon {
+    top: 0;
+    left: 0;
+    width: 110px;
+    height: 110px;
+    font-size: 50px;
+    text-align: center;
+    position: absolute;
+    border-radius: 50%;
+    color: #0088cc;
+    transition: .5s;
+    background-color:#ffffff;
+    box-shadow: 0 0 65px #0000000d;
+}
+
+.software-funfacts-item   .icon   i {
+    left: 0;
+    right: 0;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+}
+
+.software-funfacts-item   h3 {
+    margin-bottom: 5px;
+    font-size: 40px;
+    line-height: 1;
+    font-family: 'MontserratRegular';
+    color: #000;
+}
+
+.software-funfacts-item   span {
+    line-height: initial;
+    color: #616b7e;
+    font-size: 16px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+
+.namep-valuable-inner .slick-arrow:before{
+    font-family: "Font Awesome 5 Free" !important;
+    font-weight: 900 !important;
+    color: #fff !important;
+}
+
+@media (max-width: 991px){
+
+	.features-area {
+	    padding: 80px 0 30px;
+	}
+	.software-single-help-desk-box {
+	    padding-bottom: 50px;
+	}
+
+}
+
+@media (max-width: 400px){
+
+    .software-funfacts-item .icon{
+        left: 30px;
+    }
+    .software-funfacts-item{
+        padding-left: 170px;
+    }
+
+}

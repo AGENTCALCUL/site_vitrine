@@ -1,0 +1,11 @@
+/* FILE: main/typography/_family.scss */
+
+html {
+	@extend %font_body;
+
+	@include media( map_get( $breakpoint, 's' ) ) {
+		font-size: map_get( $customize_options, 'typography_size_html' );
+		font-size: var(--typography_size_html);
+	}
+
+}

@@ -1,0 +1,23 @@
+/* FILE: blocks/__index.scss */
+
+@import 'block';
+
+@import 'button';
+@import 'calendar';
+@import 'code';
+@import 'columns';
+@import 'cover';
+@import 'dropcap';
+@import 'embed';
+@import 'gallery';
+@import 'group';
+@import 'image';
+@import 'media-text';
+@import 'pullquote';
+@import 'quote';
+@import 'separator';
+@import 'spacer';
+@import 'table';
+@import 'verse';
+
+@import '../extend';

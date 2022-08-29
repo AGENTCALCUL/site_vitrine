@@ -1,0 +1,21 @@
+/* FILE: main/sidebar/_sidebar.scss */
+
+.sidebar {
+	@extend %font_size_smaller;
+	@extend %line_height_golden;
+	position: relative;
+	padding: ( $golden +em ) 0 0;
+	margin: ( _pow( $golden, 2 ) +rem ) 0 0;
+
+	@include media( map_get( $breakpoint, 'l' ) ) {
+		float: $right; // {{RTL}}
+		width: percentage( ( 100 - $page_content_width - $page_content_gutter ) / 100 );
+		padding-top: 0;
+		margin-top: 0;
+	}
+
+	.widget {
+		margin-bottom: _pow( 1 + $golden_minor, 4 ) +rem;
+	}
+
+}

@@ -1,0 +1,60 @@
+/* FILE: blocks/_button.scss */
+
+.wp-block-button {
+
+	&s {
+		align-items: center;
+		gap: .5em;
+	}
+
+	&__link {
+
+		&.has-background {
+			padding: 1em 2em;
+		}
+
+		&:not(.has-background) {
+			background-color: map_get( $customize_options, 'color_accent' );
+			background-color: var(--color_accent);
+		}
+
+		&:not(.has-text-color) {
+			color: map_get( $customize_options, 'color_accent_text' );
+			color: var(--color_accent_text);
+
+			&:hover,
+			&:focus,
+			&:active,
+			&:visited {
+				color: var(--color_accent_text);
+			}
+
+		}
+
+	}
+
+}
+
+.is-style-outline {
+
+	.wp-block-button__link {
+		border: 2px solid;
+
+		&:not(.has-text-color) {
+			color: currentColor;
+		}
+
+		&:hover,
+		&:focus,
+		&:active {
+			background: none;
+		}
+
+	}
+
+}
+
+	.is-style-outline > :not(.has-text-color),
+	.is-style-outline:not(.has-text-color) {
+		color: inherit;
+	}

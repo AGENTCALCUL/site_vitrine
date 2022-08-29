@@ -1,0 +1,10 @@
+/* FILE: woocommerce/pages/_checkout-order-pay.scss */
+
+.woocommerce-order-pay {
+
+	#payment {
+		max-width: 36em;
+		max-width: var(--layout_width_entry_content);
+	}
+
+}

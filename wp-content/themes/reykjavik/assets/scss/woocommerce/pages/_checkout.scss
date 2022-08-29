@@ -1,0 +1,228 @@
+/* FILE: woocommerce/pages/_checkout.scss */
+
+.woocommerce-checkout {
+
+	.checkout {
+		@extend %clearfix;
+
+		h3 label {
+			font-size: 1em;
+		}
+
+	}
+
+	form + .checkout {
+		padding-top: $golden +em;
+	}
+
+	.showlogin,
+	.showcoupon {
+		margin-#{$left}: $golden_major +em; // {{RTL}}
+		text-decoration: none;
+
+		@include haf() {
+			text-decoration: underline;
+		}
+
+		&::before {
+			@include rtl_property( content, '\2192', '\2190' ); // {{RTL}}
+			margin-#{$right}: $golden_major +em; // {{RTL}}
+		}
+
+	}
+
+	.checkout_coupon {
+		@extend %coupon_box;
+	}
+
+	.login,
+	.checkout_coupon {
+		max-width: 36em;
+		max-width: var(--layout_width_entry_content);
+		padding: ( _pow( $golden, 2 ) +em ) 6%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: _pow( $golden, 2 ) +em;
+		border-width: 2px;
+		border-style: dashed;
+	}
+
+	.login {
+		// Matches My Account page login form styles
+
+		p {
+			margin-top: 1em;
+			margin-bottom: 0;
+
+			&:first-child {
+				margin-top: 0;
+			}
+
+		}
+
+		.inline {
+			margin: ( $golden_major +em ) 1em;
+		}
+
+		.lost_password {
+			font-size: 1em - $golden_minor / 2;
+		}
+
+	}
+
+	&:not(.woocommerce-order-pay):not(.woocommerce-order-received) {
+
+		.col2-set {
+			//
+			// Overriding the 2 cols layout here to move the
+			// order details to the right.
+			//
+			margin-bottom: _pow( $golden, 2 ) +em;
+
+			@include media( map_get( $breakpoint, 'l' ) ) {
+				float: $left; // {{RTL}}
+				display: block;
+				width: 46%;
+				margin-bottom: 0;
+
+				.col-1,
+				.col-2 {
+					width: 100%;
+					margin-bottom: _pow( $golden, 2 ) +em;
+				}
+
+				+ h3 {
+					float: $right; // {{RTL}}
+					width: 50%;
+					margin-top: 0;
+				}
+
+			}
+
+		}
+
+	}
+
+	.woocommerce-additional-fields {
+		margin-top: _pow( $golden, 2 ) +em;
+	}
+
+	&-review-order {
+		padding: 8%;
+		border-width: 2px;
+		border-style: dashed;
+
+		@include media( map_get( $breakpoint, 'l' ) ) {
+			float: $right; // {{RTL}}
+			width: 50%;
+			padding: 4%;
+		}
+
+		&-table {
+			margin-bottom: _pow( 1 + $golden_minor, 4 ) +em;
+		}
+
+	}
+
+}
+
+.create-account {
+	clear: both;
+	padding: $golden +em;
+	border-width: 2px;
+	border-style: dashed;
+
+	label {
+		font-weight: 700;
+	}
+
+	p {
+		margin: 1em 0 0;
+
+		&:first-child {
+			margin-top: 0;
+		}
+
+	}
+
+}
+
+.wc_payment_methods {
+	margin: 0;
+	list-style: none;
+
+	select {
+		width: auto;
+	}
+
+	li {
+		position: relative;
+		margin: ( $golden_minor +em ) 0;
+
+		> label {
+			@extend %shaded_background_after;
+			display: block;
+			padding: 1em ( $golden +em );
+			font-weight: 700;
+		}
+
+		img {
+			float: $right; // {{RTL}}
+			max-height: $golden +em;
+		}
+
+	}
+
+	.payment_box {
+		padding: 1em ( $golden +em );
+	}
+
+}
+
+.woocommerce-privacy-policy-text {
+	margin: ( $golden +em ) 0;
+}
+
+.wc-terms-and-conditions {
+	margin-top: $golden +em;
+	text-align: center;
+}
+
+.woocommerce-terms-and-conditions {
+	padding: $golden +em;
+	margin-bottom: $golden +em;
+	font-size: 1em - $golden_minor / 4;
+	border-width: 1px;
+	border-style: dashed;
+
+	&-wrapper {
+		margin-top: $golden +em;
+	}
+
+	h2, .h2 {
+		font-size: $golden_minor + 1em;
+	}
+
+	h3, .h3 {
+		font-size: $golden_minor / 2 + 1em;
+	}
+
+	h4, .h4 {
+		font-size: 1em;
+	}
+
+}
+
+.woocommerce-checkout-payment .button.alt {
+	width: 100%;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	margin-top: $golden +em;
+	font-size: 1em;
+	font-weight: 700;
+
+	p + & {
+		margin-top: 0;
+	}
+
+}

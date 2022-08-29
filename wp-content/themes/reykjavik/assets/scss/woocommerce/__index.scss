@@ -1,0 +1,10 @@
+/* FILE: woocommerce/__index.scss */
+
+@import 'main/_index';
+@import 'tabs/_index';
+@import 'pages/_index';
+@import 'shortcodes/_index';
+@import 'sidebar/_index';
+@import 'extensions/_index';
+
+@import '../extend';
